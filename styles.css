@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+:root {
+    --background-color: #16161a;
+    --paragraph-color: #94a1b2;
+    --button-text-color: #fffffe;
+    --headline-color: #fffffe;
+    --button-color: #7f5af0;
+    --logo-color: #7f5af0;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: "poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--headline-color);
+    font-weight: 500;
+    text-align: center;
+    margin-top: 200px ;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+input {
+    padding: 5px 15px;
+    border: 5px solid var(--paragraph-color);
+    border-radius: 25px;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    cursor: pointer;     
+    font-size: 1.8rem;
+}
+
+input::placeholder {
+    color: var(--background-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.question {
+    color: var(--paragraph-color);
+    font-size: 2.8rem;
+    margin: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.info {
+    color: var(--paragraph-color);
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    color: var(--logo-color);
+    margin-right: 10px;
+}
+
+button {
+    margin-left: 15px;
+    padding: 5px 15px;
+    border: 5px solid var(--paragraph-color);
+    border-radius: 25px;
+    background-color: var(--button-color);
+    color: var(--background-color);
+    transition: background-color 0.2s ease-in-out;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--background-color);
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+p:last-of-type {
+    margin-bottom: 200px;
+}
+
+#result {
+    width: auto;
+    height: auto;
+    color: var(--button-color);
+    font-size: 2.8rem;
+    text-align: center;
+    margin: auto;
+    padding: 5px 15px;
+    background-color: var(--background-color);
+    overflow: auto;
+}
